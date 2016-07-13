@@ -19,9 +19,10 @@ export class StatusBox extends React.Component {
     return (
     <div className="status-wrapper">
       <h3>Post Your Status here!</h3>
+      <StautusList data={this.state.data} />
       <StatusArea onStatusSubmit={this.handleStatusSubmit.bind(this)} />
 
-      <StautusList data={this.state.data} />
+
     </div>
   );
  }
@@ -63,7 +64,6 @@ export class StatusArea extends React.Component {
       <div className="form-group">
       <textarea ref="message" cols="40" rows="10" className="form-control"  placeholder="What's on your mind ?" />
       </div>
-
       </div>
       <div className="panel-footer">
         <div className="row">
