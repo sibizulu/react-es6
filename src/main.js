@@ -7,9 +7,10 @@ import ReactDOM from 'react-dom';
 
 // Webpack will find this file in src/helper_module.js
 import {StatusArea} from 'helper_module';
+import {StatusBox} from 'helper_module';
 
-// Use React JSX syntax:
+//Use React JSX syntax:
 ReactDOM.render(
-  <StatusArea />,
+  <StatusBox />,
   document.getElementById("status-area")
 );
